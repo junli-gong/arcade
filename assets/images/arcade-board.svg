@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="460" viewBox="0 0 520 460">
+  <rect x="24" y="22" width="472" height="416" rx="28" fill="#e2ece4"/>
+  <circle cx="444" cy="76" r="20" fill="none" stroke="#174f41" stroke-width="2"/>
+  <path d="M436 76h16M444 68v16" stroke="#174f41" stroke-width="2"/>
+  <g transform="translate(108 66) rotate(-6 150 160)">
+    <rect x="8" y="10" width="300" height="320" rx="14" fill="#d9ddd3"/>
+    <rect width="300" height="320" rx="14" fill="#fffef9" stroke="#174f41" stroke-width="2"/>
+    <g fill="#fffef9" stroke="#293a32" stroke-width="2">
+      <path d="M26 34h248v248H26z"/>
+      <path d="M76 34v248M125 34v248M175 34v248M224 34v248M26 84h248M26 133h248M26 183h248M26 232h248"/>
+    </g>
+    <g fill="#293a32">
+      <path d="M224 34h50v50h-50zM76 84h49v49H76zM175 84h49v49h-49zM76 183h49v49H76zM175 183h49v49h-49zM26 232h50v50H26z"/>
+    </g>
+    <g fill="#174f41" font-family="Georgia,serif" font-size="30" text-anchor="middle">
+      <text x="51" y="70">R</text><text x="100" y="70">O</text><text x="150" y="70">L</text><text x="200" y="70">E</text>
+      <text x="51" y="120">E</text><text x="150" y="120">A</text><text x="249" y="120">H</text>
+      <text x="51" y="170">S</text><text x="100" y="170">T</text><text x="150" y="170">Y</text><text x="200" y="170">L</text><text x="249" y="170">E</text>
+      <text x="51" y="220">T</text><text x="150" y="220">E</text><text x="249" y="220">A</text>
+      <text x="100" y="270">G</text><text x="150" y="270">R</text><text x="200" y="270">I</text><text x="249" y="270">D</text>
+    </g>
+    <g fill="#174f41" font-family="monospace" font-size="10"><text x="34" y="46">1</text><text x="133" y="46">2</text><text x="232" y="96">3</text><text x="34" y="145">4</text><text x="84" y="244">5</text></g>
+    <text x="150" y="305" text-anchor="middle" fill="#56625b" font-family="monospace" font-size="11" letter-spacing="2">A SMALL DAILY CHALLENGE</text>
+  </g>
+  <path d="M64 356l12-12 12 12-12 12z" fill="none" stroke="#174f41" stroke-width="2"/>
+</svg>

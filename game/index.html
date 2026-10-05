@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Play a keyboard-friendly five-by-five web development crossword. Six clues, editable letters, and a solution you can reveal.">
+    <meta name="theme-color" content="#174f41">
+    <title>Mini crossword | Junli’s Arcade</title>
+    <link rel="icon" href="../assets/icons/arcade.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="game.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="../index.html">
+          <img src="../assets/icons/arcade.svg" alt="" width="40" height="40">
+          <span>Junli’s Arcade</span>
+        </a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../game/" aria-current="page">Game</a></li>
+            <li><a href="../about/">About</a></li>
+            <li><a href="../contact/">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="page" id="main-content" tabindex="-1">
+      <header class="page-heading game-heading">
+        <div>
+          <p class="eyebrow">Game 01 / The web edition</p>
+          <h1>Mini crossword</h1>
+          <p class="intro">A small puzzle about the things that build the web.</p>
+        </div>
+        <span class="badge">5 × 5 / Six clues</span>
+      </header>
+      <p id="puzzle-instructions">Click a white square or use Tab to move between squares, then type one letter. Shift + Tab moves back. Use Reveal solution whenever you need a hint; close it to return to your letters.</p>
+      <section class="puzzle" aria-label="Web development crossword">
+        <section class="board-panel" aria-labelledby="board-title">
+          <h2 id="board-title">Your puzzle</h2>
+          <form class="puzzle-form" action="#" autocomplete="off">
+            <div class="crossword-grid">
+              <label class="cell" data-num="1" data-answer="R" for="r1c1">
+                <span class="visually-hidden">Row 1, column 1, 1 Across, 1 Down</span>
+                <input id="r1c1" name="r1c1" type="text" maxlength="1" minlength="1" pattern="[Rr]" required autocomplete="off" autocapitalize="characters" spellcheck="false" aria-describedby="puzzle-instructions">
+              </label>
+              <label class="cell" data-answer="O" for="r1c2">
+                <span class="visually-hidden">Row 1, column 2, 1 Across</span>
+                <input id="r1c2" name="r1c2" type="text" maxlength="1" minlength="1" pattern="[Oo]" required autocomplete="off" autocapitalize="characters" spellcheck="false" aria-describedby="puzzle-instructions">
+              </label>
+              <label class="cell" data-num="2" data-answer="L" for="r1c3">
+                <span class="visually-hidden">Row 1, column 3, 1 Across, 2 Down</span>
+                <input id="r1c3" name="r1c3" type="text" maxlength="1" minlength="1" pattern="[Ll]" required autocomplete="off" autocapitalize="characters" spellcheck="false" aria-describedby="puzzle-instructions">
+              </label>
+              <label class="cell" data-answer="E" for="r1c4">
+                <span class="visually-hidden">Row 1, column 4, 1 Across</span>
+                <input id="r1c4" name="r1c4" type="text" maxlength="1" minlength="1" pattern="[Ee]" required autocomplete="off" autocapitalize="characters" spellcheck="false" aria-describedby="puzzle-instructions">
+              </label>
+              <span class="cell cell--block" aria-hidden="true"></span>
+              <label class="cell" data-answer="E" for="r2c1">
+                <span class="visually-hidden">Row 2, column 1, 1 Down</span>
+                <input id="r2c1" name="r2c1" type="text" maxlength="1" minlength="1" pattern="[Ee]" required autocomplete="off" autocapitalize="characters" spellcheck="false" aria-describedby="puzzle-instructions">
+              </label>
+              <span class="cell cell--block" aria-hidden="true"></span>
+              <label class="cell" data-answer="A" for="r2c3">
+                <span class="visually-hidden">Row 2, column 3, 2 Down</span>
+                <input id="r2c3" name="r2c3" type="text" maxlength="1" minlength="1" pattern="[Aa]" required autocomplete="off" autocapitalize="characters" spellcheck="false" aria-describedby="puzzle-instructions">
+              </label>
+              <span class="cell cell--block" aria-hidden="true"></span>
+              <label class="cell" data-num="3" data-answer="H" for="r2c5">
+                <span class="visually-hidden">Row 2, column 5, 3 Down</span>
+                <input id="r2c5" name="r2c5" type="text" maxlength="1" minlength="1" pattern="[Hh]" required autocomplete="off" autocapitalize="characters" spellcheck="false" aria-describedby="puzzle-instructions">
+              </label>
+              <label class="cell" data-num="4" data-answer="S" for="r3c1">
+                <span class="visually-hidden">Row 3, column 1, 4 Across, 1 Down</span>
+                <input id="r3c1" name="r3c1" type="text" maxlength="1" minlength="1" pattern="[Ss]" required autocomplete="off" autocapitalize="characters" spellcheck="false" aria-describedby="puzzle-instructions">
+              </label>
+              <label class="cell" data-answer="T" for="r3c2">
+                <span class="visually-hidden">Row 3, column 2, 4 Across</span>
+                <input id="r3c2" name="r3c2" type="text" maxlength="1" minlength="1" pattern="[Tt]" required autocomplete="off" autocapitalize="characters" spellcheck="false" aria-describedby="puzzle-instructions">
+              </label>
+              <label class="cell" data-answer="Y" for="r3c3">
+                <span class="visually-hidden">Row 3, column 3, 4 Across, 2 Down</span>
+                <input id="r3c3" name="r3c3" type="text" maxlength="1" minlength="1" pattern="[Yy]" required autocomplete="off" autocapitalize="characters" spellcheck="false" aria-describedby="puzzle-instructions">
+              </label>
+              <label class="cell" data-answer="L" for="r3c4">
+                <span class="visually-hidden">Row 3, column 4, 4 Across</span>
+                <input id="r3c4" name="r3c4" type="text" maxlength="1" minlength="1" pattern="[Ll]" required autocomplete="off" autocapitalize="characters" spellcheck="false" aria-describedby="puzzle-instructions">
+              </label>
+              <label class="cell" data-answer="E" for="r3c5">
+                <span class="visually-hidden">Row 3, column 5, 4 Across, 3 Down</span>
+                <input id="r3c5" name="r3c5" type="text" maxlength="1" minlength="1" pattern="[Ee]" required autocomplete="off" autocapitalize="characters" spellcheck="false" aria-describedby="puzzle-instructions">
+              </label>
+              <label class="cell" data-answer="T" for="r4c1">
+                <span class="visually-hidden">Row 4, column 1, 1 Down</span>
+                <input id="r4c1" name="r4c1" type="text" maxlength="1" minlength="1" pattern="[Tt]" required autocomplete="off" autocapitalize="characters" spellcheck="false" aria-describedby="puzzle-instructions">
+              </label>
+              <span class="cell cell--block" aria-hidden="true"></span>
+              <label class="cell" data-answer="E" for="r4c3">
+                <span class="visually-hidden">Row 4, column 3, 2 Down</span>
+                <input id="r4c3" name="r4c3" type="text" maxlength="1" minlength="1" pattern="[Ee]" required autocomplete="off" autocapitalize="characters" spellcheck="false" aria-describedby="puzzle-instructions">
+              </label>
+              <span class="cell cell--block" aria-hidden="true"></span>
+              <label class="cell" data-answer="A" for="r4c5">
+                <span class="visually-hidden">Row 4, column 5, 3 Down</span>
+                <input id="r4c5" name="r4c5" type="text" maxlength="1" minlength="1" pattern="[Aa]" required autocomplete="off" autocapitalize="characters" spellcheck="false" aria-describedby="puzzle-instructions">
+              </label>
+              <span class="cell cell--block" aria-hidden="true"></span>
+              <label class="cell" data-num="5" data-answer="G" for="r5c2">
+                <span class="visually-hidden">Row 5, column 2, 5 Across</span>
+                <input id="r5c2" name="r5c2" type="text" maxlength="1" minlength="1" pattern="[Gg]" required autocomplete="off" autocapitalize="characters" spellcheck="false" aria-describedby="puzzle-instructions">
+              </label>
+              <label class="cell" data-answer="R" for="r5c3">
+                <span class="visually-hidden">Row 5, column 3, 5 Across, 2 Down</span>
+                <input id="r5c3" name="r5c3" type="text" maxlength="1" minlength="1" pattern="[Rr]" required autocomplete="off" autocapitalize="characters" spellcheck="false" aria-describedby="puzzle-instructions">
+              </label>
+              <label class="cell" data-answer="I" for="r5c4">
+                <span class="visually-hidden">Row 5, column 4, 5 Across</span>
+                <input id="r5c4" name="r5c4" type="text" maxlength="1" minlength="1" pattern="[Ii]" required autocomplete="off" autocapitalize="characters" spellcheck="false" aria-describedby="puzzle-instructions">
+              </label>
+              <label class="cell" data-answer="D" for="r5c5">
+                <span class="visually-hidden">Row 5, column 5, 5 Across, 3 Down</span>
+                <input id="r5c5" name="r5c5" type="text" maxlength="1" minlength="1" pattern="[Dd]" required autocomplete="off" autocapitalize="characters" spellcheck="false" aria-describedby="puzzle-instructions">
+              </label>
+            </div>
+            <div class="board-actions">
+              <p>19 letters / No timer</p>
+              <button class="button button--secondary" type="reset">Clear letters</button>
+            </div>
+            <p class="solved-message">Puzzle complete. Nicely connected!</p>
+          </form>
+        </section>
+        <div class="clue-panel">
+          <section aria-labelledby="across-title">
+            <h2 id="across-title">Across</h2>
+            <ol class="clue-list">
+              <li value="1">Attribute that tells assistive technology what kind of element this is. <span class="clue-length">(4)</span></li>
+              <li value="4">HTML attribute for inline CSS. <span class="clue-length">(5)</span></li>
+              <li value="5">CSS layout system that arranges items in rows and columns. <span class="clue-length">(4)</span></li>
+            </ol>
+          </section>
+          <section aria-labelledby="down-title">
+            <h2 id="down-title">Down</h2>
+            <ol class="clue-list">
+              <li value="1">Architectural style often used for HTTP APIs. <span class="clue-length">(4)</span></li>
+              <li value="2">A CSS cascade grouping, declared with <code>@_____</code>. <span class="clue-length">(5)</span></li>
+              <li value="3">The HTML element containing a page’s title and metadata. <span class="clue-length">(4)</span></li>
+            </ol>
+          </section>
+        </div>
+        <details class="solution">
+          <summary>Reveal solution</summary>
+          <div class="solution-content">
+            <p>The solution is shown on the board. Your letters are saved while this panel is open. Close the panel to keep playing.</p>
+            <div class="answer-lists">
+              <section aria-labelledby="across-answers-title">
+                <h2 id="across-answers-title">Across answers</h2>
+                <ol>
+                  <li value="1"><strong>ROLE</strong> — an element’s semantic role.</li>
+                  <li value="4"><strong>STYLE</strong> — inline styling.</li>
+                  <li value="5"><strong>GRID</strong> — a two-dimensional layout.</li>
+                </ol>
+              </section>
+              <section aria-labelledby="down-answers-title">
+                <h2 id="down-answers-title">Down answers</h2>
+                <ol>
+                  <li value="1"><strong>REST</strong> — an API architectural style.</li>
+                  <li value="2"><strong>LAYER</strong> — a cascade grouping.</li>
+                  <li value="3"><strong>HEAD</strong> — the page metadata container.</li>
+                </ol>
+              </section>
+            </div>
+          </div>
+        </details>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p>© 2026 Junli’s Arcade. A little room to play.</p>
+        <a href="../contact/">Let’s connect <span aria-hidden="true">↗</span></a>
+      </div>
+    </footer>
+  </body>
+</html>

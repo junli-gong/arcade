@@ -1,0 +1,225 @@
+.game-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+
+.puzzle {
+  display: grid;
+  align-items: start;
+  gap: var(--space-8);
+}
+
+.board-panel {
+  padding: var(--space-3);
+  border: var(--line-thin) solid var(--color-line);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+}
+
+.board-panel h2 {
+  padding: var(--space-2);
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.puzzle-form {
+  margin: 0;
+}
+
+.crossword-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(var(--target-size), 1fr));
+  gap: var(--line-bold);
+  width: 100%;
+  max-width: 22.5rem;
+  margin-inline: auto;
+  padding: var(--space-2);
+  border: var(--line-bold) solid var(--color-block);
+  border-radius: var(--radius-sm);
+  background: var(--color-block);
+}
+
+.cell {
+  position: relative;
+  display: block;
+  min-width: 0;
+  aspect-ratio: 1;
+  background: var(--color-surface);
+}
+
+.cell--block {
+  background: var(--color-block);
+}
+
+.cell[data-num]::before {
+  content: attr(data-num);
+  position: absolute;
+  z-index: 2;
+  top: var(--line-bold);
+  left: var(--space-1);
+  color: var(--color-ink);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  line-height: 1;
+  pointer-events: none;
+}
+
+.cell input {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  padding: var(--space-2) 0 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: clamp(var(--text-lg), 4vw, var(--text-2xl));
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  caret-color: var(--color-accent);
+  scroll-margin-block: calc(var(--nav-height) + var(--space-6));
+}
+
+.cell:focus-within {
+  z-index: 3;
+  background: var(--color-accent-soft);
+}
+
+.cell input:focus-visible {
+  outline: var(--focus-width) solid var(--color-accent);
+  outline-offset: calc(-1 * var(--focus-width));
+}
+
+.board-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin-top: var(--space-4);
+}
+
+.board-actions p {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+}
+
+.board-actions .button {
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--text-sm);
+}
+
+.solved-message {
+  display: none;
+  margin: var(--space-4) 0 0;
+  padding: var(--space-3);
+  border-radius: var(--radius-sm);
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+/* Native input validation lets CSS show completion without a script. */
+.puzzle-form:not(:has(input:invalid)) .solved-message {
+  display: block;
+}
+
+.clue-panel > p {
+  color: var(--color-muted);
+}
+
+.clue-list {
+  margin: var(--space-4) 0 var(--space-8);
+  padding-left: var(--space-6);
+}
+
+.clue-list li {
+  padding-left: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+
+.clue-list li::marker {
+  color: var(--color-accent);
+  font-family: var(--font-mono);
+  font-weight: 700;
+}
+
+.clue-length {
+  color: var(--color-muted);
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  white-space: nowrap;
+}
+
+.solution {
+  grid-column: 1 / -1;
+  padding: var(--space-4);
+  border: var(--line-thin) solid var(--color-line);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+}
+
+.solution summary {
+  min-height: var(--target-size);
+  padding: var(--space-3) var(--space-2);
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+.solution summary:hover {
+  background: var(--color-accent-soft);
+}
+
+.solution-content {
+  padding: var(--space-4) var(--space-2) 0;
+}
+
+.answer-lists {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.answer-lists ol {
+  margin-block: var(--space-3);
+}
+
+/* Keep text answers below as the accessible, cross-browser fallback. */
+@supports selector(:has(*)) {
+  .puzzle:has(.solution[open]) .cell:not(.cell--block)::after {
+    content: attr(data-answer);
+    position: absolute;
+    inset: 0;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    padding-top: var(--space-2);
+    background: var(--color-accent-soft);
+    color: var(--color-accent);
+    font-size: clamp(var(--text-lg), 4vw, var(--text-2xl));
+    font-weight: 600;
+    pointer-events: none;
+  }
+
+  .puzzle:has(.solution[open]) .cell input:focus-visible {
+    position: relative;
+    z-index: 1;
+    color: transparent;
+    caret-color: transparent;
+  }
+}
+
+@media (min-width: 40rem) {
+  .puzzle { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .board-panel { padding: var(--space-4); }
+  .answer-lists { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
