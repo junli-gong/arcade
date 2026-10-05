@@ -27,6 +27,11 @@
   gap: var(--space-8);
 }
 
+.about-stack {
+  display: grid;
+  gap: var(--space-8);
+}
+
 .about-card {
   padding: var(--space-6);
   border: var(--line-thin) solid var(--color-line);
