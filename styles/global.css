@@ -5,12 +5,10 @@
   --color-ink: #202923;
   --color-muted: #56625b;
   --color-line: #d9ddd3;
-  --color-soft: #eceee6;
   --color-accent: #174f41;
   --color-accent-soft: #e2ece4;
   --color-block: #293a32;
   --font-body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --font-display: var(--font-body);
   --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
   --text-xs: 0.75rem;
   --text-sm: 0.875rem;
@@ -20,7 +18,6 @@
   --text-2xl: 2rem;
   --text-3xl: 2.5rem;
   --text-4xl: 4.5rem;
-  --text-hero: 4.5rem;
   --space-1: 0.25rem;
   --space-2: 0.5rem;
   --space-3: 0.75rem;
@@ -29,7 +26,6 @@
   --space-8: 2rem;
   --space-12: 3rem;
   --space-16: 4rem;
-  --space-24: 6rem;
   --radius-sm: 0.5rem;
   --radius-lg: 1.25rem;
   --radius-pill: 99rem;
@@ -104,12 +100,6 @@ h6 {
   line-height: 1.15;
   font-weight: 600;
   letter-spacing: -0.035em;
-}
-
-h1,
-h2 {
-  font-family: var(--font-display);
-  font-weight: 600;
 }
 
 h1 {
@@ -256,16 +246,6 @@ summary {
   padding-block: var(--space-12);
 }
 
-.eyebrow {
-  margin-bottom: var(--space-4);
-  color: var(--color-accent);
-  font-family: var(--font-body);
-  font-size: var(--text-sm);
-  font-weight: 650;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
 .intro {
   color: var(--color-muted);
   font-size: var(--text-lg);
@@ -312,11 +292,6 @@ summary {
   font-family: var(--font-mono);
   font-size: var(--text-xs);
   font-weight: 600;
-}
-
-.badge--quiet {
-  background: var(--color-soft);
-  color: var(--color-muted);
 }
 
 .page-heading {

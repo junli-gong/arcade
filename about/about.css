@@ -15,12 +15,6 @@
   border-radius: var(--radius-lg);
 }
 
-.portrait figcaption {
-  margin-top: var(--space-3);
-  color: var(--color-muted);
-  font-size: var(--text-sm);
-}
-
 .about-sections {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
@@ -79,7 +73,84 @@
   margin-bottom: var(--space-4);
 }
 
+.publication-meta {
+  color: var(--color-muted);
+}
+
 @media (min-width: 40rem) {
   .about-intro { grid-template-columns: 1.5fr 1fr; }
   .portrait { justify-self: end; }
+}
+
+/* Each entry becomes one row when there is room for readable columns. */
+@media (min-width: 64rem) {
+  .resume-entry {
+    display: grid;
+    grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.8fr) minmax(0, 1.05fr) minmax(0, 1fr);
+    align-items: start;
+    gap: var(--space-6);
+  }
+
+  .resume-entry--education {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr) minmax(0, 1.1fr);
+  }
+
+  .resume-entry + .resume-entry {
+    padding-top: var(--space-6);
+    border-top: var(--line-thin) solid var(--color-line);
+  }
+
+  .resume-entry > * {
+    min-width: 0;
+    margin: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .resume-entry > .entry-title {
+    font-size: var(--text-lg);
+  }
+
+  .resume-entry > .entry-role {
+    font-size: var(--text-base);
+    line-height: 1.5;
+  }
+
+  .resume-entry > .entry-meta,
+  .resume-entry > .entry-topic {
+    font-size: var(--text-sm);
+  }
+
+  .about-card .resume-entry > .entry-topic {
+    margin-top: 0;
+    padding-left: 0;
+    border-left: 0;
+  }
+
+  .entry-topic h5,
+  .entry-topic h6 {
+    margin-bottom: var(--space-1);
+    color: var(--color-muted);
+    font-size: var(--text-xs);
+  }
+
+  .entry-topic p {
+    margin-bottom: 0;
+  }
+
+  .about-card .entry-topic section {
+    margin-top: var(--space-2);
+    padding-left: 0;
+    border-left: 0;
+  }
+
+  .publication-list {
+    max-width: none;
+  }
+
+  .publication-entry {
+    display: grid;
+    grid-template-columns: minmax(0, 2.2fr) minmax(0, 1fr);
+    align-items: start;
+    gap: var(--space-6);
+  }
 }

@@ -10,7 +10,7 @@ Project 1 is built with plain HTML and CSS only: no JavaScript, no CSS framework
 
 | Path | Contents |
 |---|---|
-| `/` | Landing page and the game shelf |
+| `/` | Landing page with an introduction and a link to the mini crossword |
 | `/game/` | A playable 5×5 web-development mini crossword |
 | `/about/` | Experience, education, skills, and selected publications |
 | `/contact/` | Email and professional links |
@@ -23,7 +23,6 @@ Project 1 is built with plain HTML and CSS only: no JavaScript, no CSS framework
 - **Reveal solution** is a native `details` / `summary` element, so it works with a mouse, touch, or the keyboard.
 - In browsers that support `:has()`, opening it overlays the answers on the board. A text version of the answers is always available inside the panel.
 - **Clear letters** is a native form reset.
-- When every square is correct, native `pattern` / `required` validation and `:has()` show a completion message.
 
 ## Design notes
 
