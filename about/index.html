@@ -8,7 +8,7 @@
     <title>About Junli Gong | Junli’s Arcade</title>
     <link rel="icon" href="../assets/icons/arcade.svg" type="image/svg+xml">
     <link rel="stylesheet" href="../styles/global.css">
-    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="about.css?v=2">
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -43,80 +43,103 @@
         </figure>
       </section>
       <div class="about-sections">
+        <section class="about-card" aria-labelledby="education-title">
+          <h2 id="education-title">Education</h2>
+          <section aria-labelledby="neu-title">
+            <h3 id="neu-title">Northeastern University</h3>
+            <p><strong>M.S. in Computer Science</strong></p>
+            <p class="muted">Sep 2025 – Dec 2026 (expected) / Seattle, WA</p>
+          </section>
+          <section aria-labelledby="hkbu-title">
+            <h3 id="hkbu-title">Hong Kong Baptist University</h3>
+            <p><strong>B.Sc. (Hons) in Computer Science and Technology</strong></p>
+            <p class="muted">Sep 2021 – Jun 2025 / Zhuhai, China</p>
+          </section>
+        </section>
+        <section class="about-card" aria-labelledby="research-title">
+          <h2 id="research-title">Research experience</h2>
+          <section aria-labelledby="bn-hkbu-title">
+            <h3 id="bn-hkbu-title">Beijing Normal-Hong Kong Baptist University</h3>
+            <h4>Research Assistant</h4>
+            <p class="muted">Sep 2024 – Present · Supervisor: Prof. Weifeng Su</p>
+            <p>Multimodal perception · Embodied AI · PEAM · FuScore</p>
+          </section>
+          <section aria-labelledby="pazhou-title">
+            <h3 id="pazhou-title">Pazhou Lab / South China University of Technology</h3>
+            <h4>Research Intern</h4>
+            <p class="muted">Jul 2025 – Aug 2025 · Supervisor: Prof. Lu Lu</p>
+            <p>CUDA kernels · FP16 Tensor Core optimization</p>
+          </section>
+          <section aria-labelledby="bnu-title">
+            <h3 id="bnu-title">Beijing Normal University, Zhuhai</h3>
+            <h4>Undergraduate Researcher</h4>
+            <p class="muted">Jan 2024 – Jun 2025 · Supervisor: Prof. Jianxiong Guo</p>
+            <p>Federated learning · Dynamic spectral clustering</p>
+          </section>
+          <section aria-labelledby="nnu-title">
+            <h3 id="nnu-title">Nanjing Normal University</h3>
+            <h4>Research Assistant · Remote</h4>
+            <p class="muted">Jan 2024 – Jun 2024 · Supervisor: Dr. Nian Xia</p>
+            <p>Malicious traffic detection · Feature selection</p>
+          </section>
+        </section>
         <section class="about-card" aria-labelledby="industry-title">
           <h2 id="industry-title">Industry experience</h2>
           <section aria-labelledby="iflytek-title">
             <h3 id="iflytek-title">iFLYTEK</h3>
             <h4>AI Infra Intern</h4>
             <p class="muted">Jul 2026 – Aug 2026 / Hefei, China</p>
-            <section aria-labelledby="evaluation-title">
-              <h5 id="evaluation-title">Automated model evaluation</h5>
-              <p>Developed an evaluation platform for ASR/TTS models across heterogeneous AI accelerators.</p>
-              <section aria-labelledby="validation-title">
-                <h6 id="validation-title">Validation results</h6>
-                <p>Resolved 30 engineering issues and built a validator that caught all 99 historical faulty records with zero false positives.</p>
+            <section aria-labelledby="infra-focus-title">
+              <h5 id="infra-focus-title">Focus</h5>
+              <p>ASR/TTS evaluation · Accuracy debugging</p>
+              <section aria-labelledby="infra-platforms-title">
+                <h6 id="infra-platforms-title">Platforms</h6>
+                <p>Ascend NPU · DCU · MLU · MUSA</p>
               </section>
             </section>
-            <p>Diagnosed an Ascend NPU accuracy regression through layer-wise operator comparison and verified the fix on 200 samples.</p>
           </section>
           <section aria-labelledby="quant-cloud-title">
             <h3 id="quant-cloud-title">Shenzhen Quant-Cloud Energy Network Technology</h3>
-            <p><strong>Research &amp; Development Intern</strong></p>
+            <h4>Research &amp; Development Intern</h4>
             <p class="muted">Aug 2024 / Shenzhen, China</p>
-            <p>Built an Anomaly Transformer-based detector for wind-turbine gearbox bearing temperatures.</p>
+            <p>Wind-turbine predictive maintenance · Anomaly detection</p>
           </section>
           <section aria-labelledby="kenexs-title">
             <h3 id="kenexs-title">Kenexs Intelligent Technology</h3>
-            <p><strong>Software Development Intern</strong></p>
+            <h4>Software Development Intern</h4>
             <p class="muted">Jul 2023 – Sep 2023 / Shenzhen, China</p>
-            <p>Built a Qt log analyzer for industrial machine-vision camera testing.</p>
+            <p>Qt log analysis · Industrial machine vision</p>
           </section>
         </section>
-        <div class="about-stack">
-          <section class="about-card" aria-labelledby="education-title">
-            <h2 id="education-title">Education</h2>
-            <section aria-labelledby="neu-title">
-              <h3 id="neu-title">Northeastern University</h3>
-              <p><strong>M.S. in Computer Science</strong></p>
-              <p class="muted">Sep 2025 – Dec 2026 (expected) / Seattle, WA</p>
-            </section>
-            <section aria-labelledby="hkbu-title">
-              <h3 id="hkbu-title">Hong Kong Baptist University</h3>
-              <p><strong>B.Sc. (Hons) in Computer Science and Technology</strong></p>
-              <p class="muted">Sep 2021 – Jun 2025 / Zhuhai, China</p>
-            </section>
-          </section>
-          <section class="about-card" aria-labelledby="skills-title">
-            <h2 id="skills-title">Skills</h2>
-            <p>Programming, machine learning, and systems engineering.</p>
-            <ul class="skills">
-              <li><span class="badge">Python</span></li>
-              <li><span class="badge">C/C++</span></li>
-              <li><span class="badge">CUDA</span></li>
-              <li><span class="badge">Java</span></li>
-              <li><span class="badge">SQL</span></li>
-              <li><span class="badge">JavaScript</span></li>
-              <li><span class="badge">PyTorch</span></li>
-              <li><span class="badge">Transformers</span></li>
-              <li><span class="badge">SGLang</span></li>
-              <li><span class="badge">NeMo</span></li>
-              <li><span class="badge">Linux</span></li>
-              <li><span class="badge">Git</span></li>
-            </ul>
-            <p class="language-note">Chinese (native) · English (fluent)</p>
-          </section>
-        </div>
+        <section class="about-card" aria-labelledby="skills-title">
+          <h2 id="skills-title">Skills</h2>
+          <ul class="skills">
+            <li><span class="badge">Python</span></li>
+            <li><span class="badge">C/C++</span></li>
+            <li><span class="badge">CUDA</span></li>
+            <li><span class="badge">Java</span></li>
+            <li><span class="badge">SQL</span></li>
+            <li><span class="badge">JavaScript</span></li>
+            <li><span class="badge">PyTorch</span></li>
+            <li><span class="badge">Transformers</span></li>
+            <li><span class="badge">SGLang</span></li>
+            <li><span class="badge">NeMo</span></li>
+            <li><span class="badge">Linux</span></li>
+            <li><span class="badge">Git</span></li>
+          </ul>
+          <p class="language-note">Chinese (native) · English (fluent)</p>
+        </section>
+        <section class="about-card publications" aria-labelledby="publications-title">
+          <h2 id="publications-title">Selected publications</h2>
+          <p class="muted">A selection from my research in multimodal perception, embodied AI, and federated learning.</p>
+          <ul class="publication-list">
+            <li><strong>Can Segmentation Models Understand the World? Proactive Affordance Reasoning via Vision-Grounded Chain-of-Thought.</strong> EMNLP 2026, Main Conference, Oral.</li>
+            <li><strong>PEAM: Parametric Embodied Agent Memory for Continual Skill Learning via Internalization of Experience in Minecraft.</strong> Findings of EMNLP 2026, Poster. Co-first author.</li>
+            <li><strong>Enhancing Federated Learning in IoT Through Dynamic Spectral Clustering.</strong> WASA 2025, Oral. Co-first author.</li>
+          </ul>
+          <a class="button button--secondary" href="https://scholar.google.com/citations?user=ivUsbMMAAAAJ">View Google Scholar <span aria-hidden="true">↗</span></a>
+        </section>
       </div>
-      <section class="about-card publications" aria-labelledby="publications-title">
-        <h2 id="publications-title">Selected publications</h2>
-        <p class="muted">A selection from my research in multimodal perception, embodied AI, and federated learning.</p>
-        <ul class="publication-list">
-          <li><strong>Can Segmentation Models Understand the World? Proactive Affordance Reasoning via Vision-Grounded Chain-of-Thought.</strong> EMNLP 2026, Main Conference, Oral.</li>
-          <li><strong>PEAM: Parametric Embodied Agent Memory for Continual Skill Learning via Internalization of Experience in Minecraft.</strong> Findings of EMNLP 2026, Poster. Co-first author.</li>
-          <li><strong>Enhancing Federated Learning in IoT Through Dynamic Spectral Clustering.</strong> WASA 2025, Oral. Co-first author.</li>
-        </ul>
-        <a class="button button--secondary" href="https://scholar.google.com/citations?user=ivUsbMMAAAAJ">View Google Scholar <span aria-hidden="true">↗</span></a>
-      </section>
     </main>
     <footer class="site-footer">
       <div class="footer-inner">

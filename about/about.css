@@ -23,16 +23,16 @@
 
 .about-sections {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   align-items: start;
   gap: var(--space-8);
-}
-
-.about-stack {
-  display: grid;
-  gap: var(--space-8);
+  width: 100%;
 }
 
 .about-card {
+  grid-column: 1 / -1;
+  width: 100%;
+  min-width: 0;
   padding: var(--space-6);
   border: var(--line-thin) solid var(--color-line);
   border-radius: var(--radius-lg);
@@ -70,10 +70,6 @@
   color: var(--color-muted);
 }
 
-.publications {
-  margin-top: var(--space-8);
-}
-
 .publication-list {
   max-width: var(--reading-width);
   margin-block: var(--space-6);
@@ -86,5 +82,4 @@
 @media (min-width: 40rem) {
   .about-intro { grid-template-columns: 1.5fr 1fr; }
   .portrait { justify-self: end; }
-  .about-sections { grid-template-columns: 1.3fr 1fr; }
 }
